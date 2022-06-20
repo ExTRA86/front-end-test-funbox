@@ -1,0 +1,40 @@
+const cardsBase = [
+  {
+    id: 1,
+    name: 'фуа-гра',
+    defaultStatus: 'default',
+    taste: 'с фуа-гра',
+    portion: '10',
+    giftCount: '',
+    giftText: 'мышь в подарок',
+    clientComment: '',
+    value: '0,5',
+    comment: 'Печень утки разварная с артишоками.',
+  },
+  {
+    id: 2,
+    name: 'рыба',
+    defaultStatus: 'default',
+    taste: 'с рыбой',
+    portion: '40',
+    giftCount: '2',
+    giftText: ' мыши в подарок',
+    clientComment: '',
+    value: '2',
+    comment: 'Головы щучьи с чесноком да свежайшая сёмгушка.',
+  },
+  {
+    id: 3,
+    name: 'курица',
+    defaultStatus: 'disabled',
+    taste: 'с курой',
+    portion: '100',
+    giftCount: '5',
+    giftText: ' мышей в подарок',
+    clientComment: 'заказчик доволен',
+    value: '5',
+    comment: 'Печалька, с курой закончился.',
+  },
+];
+
+export default cardsBase;

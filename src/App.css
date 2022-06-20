@@ -1,38 +1,66 @@
-.App {
+@font-face {
+  font-family: 'Exo2.0-Thin';
+  src: url(./fonts/Exo2.0-Thin.otf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  background-image: url('./img/background.png');
+  background-size: cover;
+  font-family: 'Trebuchet MS';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.content__body {
+  top: calc(50% - 315px);
+  height: 630px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.content__title {
+  font-family: 'Exo2.0-Thin';
+  margin-bottom: 36px;
+  font-weight: normal;
+  line-height: 1.2;
+  font-size: 36px;
   text-align: center;
+  color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 1680px) {
+  .content__column {
+    padding-bottom: 50px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 959px) {
+  .content__body {
+    position: relative;
   }
-  to {
-    transform: rotate(360deg);
+  .content__column {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content__body {
+    position: relative;
+  }
+  .content__column {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-height: 635px) {
+  .content__title {
+    margin-bottom: 10px;
+    font-size: 30px;
   }
 }

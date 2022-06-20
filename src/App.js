@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
+import Card from './components/Card';
 import './App.css';
+import cardsBase from './CardsBase';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className='content'>
+      <div className='content__body'>
+        <div className='content__title'>Ты сегодня покормил кота?</div>
+        <div className='content__row'>
+          {cardsBase.map(card => (
+            <Card
+              defaultStatus={card.defaultStatus}
+              taste={card.taste}
+              portion={card.portion}
+              giftCount={card.giftCount}
+              giftText={card.giftText}
+              clientComment={card.clientComment}
+              value={card.value}
+              comment={card.comment}
+              key={card.id}
+            />
+          ))}
+        </div>
+      </div>
+    </main>
   );
 }
 
